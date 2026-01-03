@@ -10,7 +10,7 @@ const TodaysCreative = () => {
       </h2>
 
       {/* Images – remaining space */}
-      <div className="grid grid-cols-2 gap-4 h-44">
+      <div className="grid grid-cols-2 gap-4 h-53">
         
         <div className="overflow-hidden rounded-lg border">
           <img

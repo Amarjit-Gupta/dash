@@ -4,8 +4,8 @@ import BarChartDouble from "./components/BarChartDouble";
 import Total from "./components/Total";
 import KPI from "./components/KPI";
 import TodaysCreative from "./components/TodaysCreative";
-
-
+import CarouselComponent from "./components/Carousel";
+import Emailer from "./components/Emailer";
 
 const App = () => {
   return (
@@ -31,7 +31,7 @@ const App = () => {
       <div className="grid grid-cols-5 gap-6 items-stretch">
 
         <div className=" border h-full">
-          <KPI txt1="Total Leads" txt2="Last month period" val1={20} val2={20} />
+          <KPI txt1="Total Leads" txt2="Last month same period" val1={20} val2={20} />
         </div>
 
         <div className="border h-full">
@@ -46,24 +46,24 @@ const App = () => {
           <KPI txt1="Revenue" val1={20} />
         </div>
 
-        <div className="h-full border p-5 flex justify-between">
-          <div className="border flex flex-col justify-between ">
-            <div className="border p-1 rounded-full h-9 w-9">p</div>
+        <div className="h-full border p-3 flex justify-between bg-white">
+          <div className="border flex flex-col justify-around ">
+            <div className="border p-1 rounded-full h-9 w-9 ">p</div>
             <div className="border text-xl font-medium">999</div>
           </div>
-          <div className="border flex flex-col justify-between ">
+          <div className="border flex flex-col justify-around ">
             <div className="border p-1 rounded-full h-9 w-9">g</div>
             <div className="border text-xl font-medium">999</div>
           </div>
-          <div className="border flex flex-col justify-between ">
+          <div className="border flex flex-col justify-around ">
             <div className="border p-1 rounded-full h-9 w-9">b</div>
-            <div className="border text-xl font-medium">9999</div>
+            <div className="border text-xl font-medium">999</div>
           </div>
-          <div className="border flex flex-col justify-between ">
+          <div className="border flex flex-col justify-around ">
             <div className="border p-1 rounded-full h-9 w-9">n</div>
             <div className="border text-xl font-medium">999</div>
           </div>
-          <div className="border flex flex-col justify-between ">
+          <div className="border flex flex-col justify-around ">
             <div className="border p-1 rounded-full h-9 w-9">y</div>
             <div className="border text-xl font-medium">999</div>
           </div>
@@ -75,28 +75,35 @@ const App = () => {
       <div className="grid grid-cols-3 gap-6">
         <div className="border p-3"><TodaysCreative /></div>
 
-
-
         <div className="border p-3 flex flex-col">
-       
+
           <h2 className="text-xl font-bold h-10 border">
-            Heading
+            Heading News
           </h2>
-     
+
           <div className="grid grid-cols-2 gap-5 h-44">
-            <div className="border border-red-500">dcddcd</div>
-            <div className="border">xs</div>
+            <div className="border">
+              <CarouselComponent />
+            </div>
+            <div className="border p-1">
+              <h3 className="border font-bold text-gray-500 py-0.5">Trending Hashtag</h3>
+              <ul className="list-disc pl-7">
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-
-
-        <div className="border">Container</div>
+        <div className="border">
+          <Emailer/>
+        </div>
       </div>
-
-
-
-
 
     </div>
   );
@@ -111,11 +118,14 @@ export default App;
 
 
 
+
+// import CurrentTime from "./time";
 // const App = () => {
 //   return(
-//     <div className="border bg-gray-500 w-50 m-auto">
-//       <CarouselComponent/>
-//     </div>
+//     <>
+//     <h1>Hello</h1>
+//     <CurrentTime/>
+//     </>
 //   );
 // };
 // export default App;

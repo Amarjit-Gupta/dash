@@ -5,29 +5,33 @@ const BarChartSingle = () => {
 
   const data = [
     {
-      "title": "promo1",
+      "title": "Instagram",
       "ctr": 4.5
     },
     {
-      "title": "promo2",
+      "title": "Facebook",
       "ctr": 6.2
     },
     {
-      "title": "promo3",
+      "title": "Linkdin",
       "ctr": 5.8
     },
     {
-      "title": "promo4",
+      "title": "Youtube",
       "ctr": 5.8
-    }
+    },
+    {
+      "title": "Others",
+      "ctr": 5.8
+    },
   ];
 
 
   return (
-    <div className="bg-white p-5 rounded-xl border w-full min-w-0 flex flex-col shadow-sm hover:shadow-lg border-gray-200 transition-shadow duration-500">
-      <h2 className="text-lg font-semibold mb-3">Social impressions</h2>
+    <div className="bg-white p-3 rounded-xl border w-full min-w-0 flex flex-col shadow-sm hover:shadow-lg border-gray-200 transition-shadow duration-500">
+      <h2 className="text-lg font-semibold mb-3">Social impressions : 56465</h2>
       <div className="w-full min-w-0 h-60 overflow-hidden">
-        <ResponsiveContainer width="100%">
+        <ResponsiveContainer width="100%" height={240} className="border border-red-500 h-full">
           <BarChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="title" />
