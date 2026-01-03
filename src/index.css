@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+
+/* inactive dots */
+.slick-dots li button:before {
+  color: black !important;
+  opacity: 0.5 !important;
+}
+
+/* active dot */
+.slick-dots li.slick-active button:before {
+  color: black !important;
+  opacity: 1 !important;
+}
